@@ -1,0 +1,57 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\begin{center}
+\textbf{{\LARGE Universidad Tecnol\'{o}gica Metropolitana}\\[0.5cm]
+{\LARGE del Estado de Chile}}\\[2cm]
+{\Large Escuela de Inform\'{a}tica}\\[3cm]
+Ayudant\'{i}a Ingenier\'{i}a de Software\\[1cm]
+{\Huge \textbf{Patrones de Dise\~no}}\\[0.9cm]
+{\Huge \textbf{en la Ingenier\'{i}a de Software}}\\[5cm]
+{\large Carla Arteaga - Paula Lineros - Juan Carlos P\'{e}rez}\\[2cm]
+Santiago - 12 de Diciembre de 2013
+\end{center}
+\newpage
+
+\section{Patrones de Dise\~{n}o}
+
+Los patrones de dise\~{n}o son la base para la b\'{u}squeda de soluciones a problemas comunes en el desarrollo de software y otros \'{a}mbitos referentes al dise\~{n}o de interacci\'{o}n o interfaces.\\\
+
+\subsection{Beneficios}
+\bigskip
+\begin{enumerate}
+
+\item Disminuir n\'{u}mero de iteraciones en el ciclo de vida del software.
+\item Ayuda a los desarrolladores y analistas de sistemas de software a 
+resolver problemas, en una estructura dada.
+\item Recoge toda la experiencia de desarrolladores a un problema, y 
+se le asigna un sentido literal.\\
+
+\end{enumerate}
+
+
+Los patrones de dise\~{n}o nos pueden ayudar a reutilizar muchas piezas de software, y no solamente para un Sistema en particular, sino que pueden ser reutilizados en varios sistemas. Algunos patrones por su naturaleza ser\'{a}n aplicados solo para un sistema. El Patr\'{o}n no es mas que una forma estandarizada de resolver un problema. Tal vez muchos piensan que se perder\'{a} mucho tiempo(y realmente el tiempo de desarrollo se puede incrementar la primera vez que realizamos esta tarea) pero no es as\'{i}, al final ganamos tiempo en el Mantenimiento del Sistema.\\
+
+\subsection{Clases de Patrones}
+\bigskip
+\begin{enumerate}
+
+\item {Patrones de Creaci\'{o}n:}\\
+
+Aqu\'{i} se agrupan los patrones que su prop\'{o}sito es la Creaci\'{o}n de Clases y Objetos, as\'{i} como para que las utilizaremos una vez creadas. El ejemplo mas sencillo de este grupo es el de Singleton, que no es mas que la implementaci\'{o}n de creaci\'{o}n de una \'{u}nica instancia de un objeto, el cual mantiene su estado siempre. ¿Qu\'{e} aplicaciones practicas le encontramos a este patr\'{o}n?  Podr\'{i}amos utilizarlo para mantener una clase con la informaci\'{o}n b\'{a}sica de un usuario conectado a nuestra aplicaci\'{o}n, para que no tengamos que ir a la Base de Datos a recuperarla cada vez que la necesitamos.\\
+
+\item {Patrones de Estructura:}\\
+
+Aqu\'{i} se agrupan los patrones que definen la estructura interna de una clase, por ejemplo el patr\'{o}n Facade el cual muestra m\'{e}todos o funciones f\'{a}ciles de entender para realizar una acci\'{o}n, encapsulando el detalle de la complejidad de la tarea a realizar. Por ejemplo con un solo m\'{e}todo podemos mostrar un mensaje al usuario, seteando una barra de estado, mostrando un mensaje emergente, ver si es de error o no, etc. o la combinaci\'{o}n de estas acciones, en una sola llamada, quitando as\'{i} la complejidad de saber a que objetos asignarles el mensaje, como mostrar un mensaje emergente, y otras tareas que ser\'{i}an repetitivas en una aplicaci\'{o}n.\\
+
+\item {Patrones de Comportamiento:}\\
+
+Aqu\'{i} se agrupan los patrones que se enfocan en la comunicaci\'{o}n entre clases y objetos. Un ejemplo es el patr\'{o}n Observer, el cual permite que una clase A pueda permitir a otras a registrarse para que cuando suceda un evento en la clase A esta le notifique a la clase registrada. El patr\'{o}n Observer es asociado al paradigma Model-View-Controller, ya que en base a eventos que suceden en la Vista se intercomunican con el Controlador y el Modelo.\\
+\end{enumerate}
+
+\end{document}
